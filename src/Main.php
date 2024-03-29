@@ -23,6 +23,7 @@ class Main extends PluginBase
     {
         if ($command->getName() === "timeui") {
             if (!$sender instanceof Player) return false;
+            if (!$sender->hasPermission("timeui.command")) return false;
             $this->sendForm($sender);
             return true;
         }
