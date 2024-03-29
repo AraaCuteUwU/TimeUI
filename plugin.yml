@@ -1,0 +1,15 @@
+name: TimeUI
+author: FiraAja
+main: FiraAja\TimeUI\Main
+api: 5.0.0
+version: 1.0.0
+src-namespace-prefix: FiraAja\TimeUI
+
+commands:
+  timeui:
+    description: "Set time on the world"
+    permission: timeui.command
+
+permissions:
+  timeui.command:
+    default: op
